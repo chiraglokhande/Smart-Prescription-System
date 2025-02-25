@@ -1,49 +1,67 @@
-🏥 Smart Prescription System
-📌 Project Overview
-The Smart Prescription System is a Java-based healthcare application that helps pharmacists manage medicines efficiently and allows patients to find suitable medicines based on medical conditions. The system ensures secure authentication for pharmacists and provides seamless database interactions using Hibernate and MySQL.
+# 🏥 Smart Prescription System
 
-🚀 Features
-✅ Pharmacist Module
+## 📌 Overview  
+The **Smart Prescription System** is a Java-based healthcare application that enables pharmacists to manage medicines and helps patients find appropriate medications based on medical conditions. This system streamlines pharmacy operations and improves accessibility to medicines.
 
-Pharmacist registration & login
-Medicine management (add, view)
-✅ Patient Module
+---
 
-Search for medicines based on medical conditions
-✅ Database Management
+## 🚀 Features  
+✅ **Pharmacist Management**: Register and log in as a pharmacist.  
+✅ **Medicine Management**: Add, update, and retrieve medicines along with associated conditions.  
+✅ **Patient Assistance**: Search for medicines based on medical conditions.  
+✅ **Secure Database Operations**: Uses Hibernate and MySQL for seamless data management.  
 
-Hibernate ORM for smooth database operations
-Secure and optimized database handling with MySQL
-🛠️ Tech Stack
-Languages: Java
-Frameworks & Libraries: Hibernate, JDBC
-Database: MySQL
-Tools: Eclipse, MySQL Workbench, Postman, Maven
-📂 Project Structure
-bash
-Copy
-Edit
+---
+
+## 🛠 Tech Stack  
+- **Programming Language**: Java  
+- **Frameworks & Libraries**: Hibernate, JDBC  
+- **Database**: MySQL  
+- **Tools**: Eclipse, MySQL Workbench, Maven  
+
+---
+
+## 📂 Project Structure  
+```plaintext
 /smart-prescription-system
-│── src/main/java/smartPrescriptionModel   # Entity classes (Pharmacist, Medicine, Cause)
-│── src/main/java/smartPrescriptionDao     # DAO layer (Database operations)
-│── src/main/java/smartPrescriptionService # Service layer (Business logic)
-│── src/main/java/smartPrescriptionController # Controller layer (User interactions)
-│── src/main/java/smartPrescriptionMain    # Main application entry point
-│── pom.xml (for Maven dependencies)
-│── README.md
-🎯 How to Run
-Clone the repository:
+│── src/main/java/
+│   ├── smartPrescriptionModel/       # Entity classes (Medicine, Cause, Pharmacist)
+│   ├── smartPrescriptionDao/         # DAO Layer (Database operations)
+│   ├── smartPrescriptionService/     # Service Layer (Business logic)
+│   ├── smartPrescriptionController/  # Controller Layer (User interaction)
+│   ├── smartPrescriptionMain/        # Main application entry point
+│── pom.xml                           # Maven dependencies
+│── README.md                         # Project Documentation
+```
+This project is licensed under the MIT License.
+
+
+⚙️ Setup Instructions
+1️⃣ Clone the Repository
 sh
 Copy
 Edit
+```
 git clone https://github.com/your-username/smart-prescription-system.git
-Import the project into Eclipse or any Java IDE.
-Set up the MySQL database and update the Hibernate configuration.
-Run the PrescriptionMain.java file to start the application.
-📌 Future Enhancements
-Implement a web-based UI for better accessibility.
-Add role-based authentication for pharmacists and patients.
-Integrate with an external medical database for accurate recommendations.
-🤝 Contributing
-Feel free to fork this repository, raise issues, or submit pull requests to improve the system!
+```
+2️⃣ Import Project
+Open Eclipse or any Java IDE and import the project as a Maven project.
+3️⃣ Configure Database
+Create a MySQL database and update hibernate.cfg.xml with your database credentials.
+4️⃣ Run the Application
+Execute PrescriptionMain.java to start the system.
+📝 Usage
+🔹 Pharmacists can register, log in, and manage medicines.
+🔹 Patients can search for medicines based on medical conditions.
+🔹 Hibernate ORM ensures efficient interaction with MySQL.
 
+📌 Future Enhancements
+🔸 Implement a web-based UI for a better user experience.
+🔸 Integrate Spring Boot for enhanced scalability.
+🔸 Add API endpoints for external system integration.
+
+🤝 Contributing
+Contributions are welcome! Fork the repository, make changes, and submit a pull request.
+
+📜 License
+This project is licensed under the MIT License.
